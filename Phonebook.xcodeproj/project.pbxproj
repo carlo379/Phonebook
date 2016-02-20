@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		076DE0721C77DA7100075EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0711C77DA7100075EDF /* main.m */; };
 		076DE0751C77DA7100075EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0741C77DA7100075EDF /* AppDelegate.m */; };
-		076DE0781C77DA7100075EDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0771C77DA7100075EDF /* ViewController.m */; };
 		076DE07B1C77DA7100075EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076DE0791C77DA7100075EDF /* Main.storyboard */; };
 		076DE07E1C77DA7100075EDF /* Phonebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 076DE07C1C77DA7100075EDF /* Phonebook.xcdatamodeld */; };
 		076DE0801C77DA7100075EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076DE07F1C77DA7100075EDF /* Assets.xcassets */; };
 		076DE0831C77DA7100075EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */; };
 		076DE08E1C77DA7100075EDF /* PhonebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE08D1C77DA7100075EDF /* PhonebookTests.m */; };
 		076DE0991C77DA7100075EDF /* PhonebookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0981C77DA7100075EDF /* PhonebookUITests.m */; };
+		076DE0B41C77DF6F00075EDF /* AddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B31C77DF6F00075EDF /* AddEditViewController.m */; };
+		076DE0B71C77DF7F00075EDF /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B61C77DF7F00075EDF /* DetailsViewController.m */; };
+		076DE0BA1C77DFC500075EDF /* PhonebookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */; };
+		076DE0BE1C77E59800075EDF /* HelpMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0BD1C77E59800075EDF /* HelpMethods.m */; };
+		076DE0C41C77EAB500075EDF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0C31C77EAB500075EDF /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 		076DE0711C77DA7100075EDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		076DE0731C77DA7100075EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		076DE0741C77DA7100075EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		076DE0761C77DA7100075EDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		076DE0771C77DA7100075EDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		076DE07A1C77DA7100075EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		076DE07D1C77DA7100075EDF /* Phonebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phonebook.xcdatamodel; sourceTree = "<group>"; };
 		076DE07F1C77DA7100075EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,17 @@
 		076DE0941C77DA7100075EDF /* PhonebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076DE0981C77DA7100075EDF /* PhonebookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonebookUITests.m; sourceTree = "<group>"; };
 		076DE09A1C77DA7100075EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076DE0B21C77DF6F00075EDF /* AddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditViewController.h; sourceTree = "<group>"; };
+		076DE0B31C77DF6F00075EDF /* AddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditViewController.m; sourceTree = "<group>"; };
+		076DE0B51C77DF7F00075EDF /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		076DE0B61C77DF7F00075EDF /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		076DE0B81C77DFC500075EDF /* PhonebookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhonebookTableViewController.h; sourceTree = "<group>"; };
+		076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhonebookTableViewController.m; sourceTree = "<group>"; };
+		076DE0BC1C77E59800075EDF /* HelpMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMethods.h; sourceTree = "<group>"; };
+		076DE0BD1C77E59800075EDF /* HelpMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMethods.m; sourceTree = "<group>"; };
+		076DE0BF1C77E5B800075EDF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		076DE0C31C77EAB500075EDF /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		076DE0C51C77EE1000075EDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +116,11 @@
 		076DE06F1C77DA7100075EDF /* Phonebook */ = {
 			isa = PBXGroup;
 			children = (
-				076DE0731C77DA7100075EDF /* AppDelegate.h */,
-				076DE0741C77DA7100075EDF /* AppDelegate.m */,
-				076DE0761C77DA7100075EDF /* ViewController.h */,
-				076DE0771C77DA7100075EDF /* ViewController.m */,
-				076DE0791C77DA7100075EDF /* Main.storyboard */,
+				076DE0BB1C77E54E00075EDF /* Helpers */,
+				076DE0A81C77DAA200075EDF /* Controllers */,
+				076DE0A71C77DA9A00075EDF /* Views */,
+				076DE0A61C77DA8B00075EDF /* Models */,
 				076DE07F1C77DA7100075EDF /* Assets.xcassets */,
-				076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */,
-				076DE0841C77DA7100075EDF /* Info.plist */,
-				076DE07C1C77DA7100075EDF /* Phonebook.xcdatamodeld */,
 				076DE0701C77DA7100075EDF /* Supporting Files */,
 			);
 			path = Phonebook;
@@ -120,7 +129,11 @@
 		076DE0701C77DA7100075EDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				076DE0841C77DA7100075EDF /* Info.plist */,
+				076DE0731C77DA7100075EDF /* AppDelegate.h */,
+				076DE0741C77DA7100075EDF /* AppDelegate.m */,
 				076DE0711C77DA7100075EDF /* main.m */,
+				076DE0C51C77EE1000075EDF /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +154,71 @@
 				076DE09A1C77DA7100075EDF /* Info.plist */,
 			);
 			path = PhonebookUITests;
+			sourceTree = "<group>";
+		};
+		076DE0A61C77DA8B00075EDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				076DE07C1C77DA7100075EDF /* Phonebook.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		076DE0A71C77DA9A00075EDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */,
+				076DE0791C77DA7100075EDF /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		076DE0A81C77DAA200075EDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0AB1C77DB3E00075EDF /* Edit Add View Controller */,
+				076DE0AA1C77DB2900075EDF /* Details View Controller */,
+				076DE0A91C77DAFC00075EDF /* Table View Controller (Main Entry) */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		076DE0A91C77DAFC00075EDF /* Table View Controller (Main Entry) */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0B81C77DFC500075EDF /* PhonebookTableViewController.h */,
+				076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */,
+			);
+			name = "Table View Controller (Main Entry)";
+			sourceTree = "<group>";
+		};
+		076DE0AA1C77DB2900075EDF /* Details View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0B51C77DF7F00075EDF /* DetailsViewController.h */,
+				076DE0B61C77DF7F00075EDF /* DetailsViewController.m */,
+			);
+			name = "Details View Controller";
+			sourceTree = "<group>";
+		};
+		076DE0AB1C77DB3E00075EDF /* Edit Add View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0B21C77DF6F00075EDF /* AddEditViewController.h */,
+				076DE0B31C77DF6F00075EDF /* AddEditViewController.m */,
+			);
+			name = "Edit Add View Controller";
+			sourceTree = "<group>";
+		};
+		076DE0BB1C77E54E00075EDF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				076DE0BC1C77E59800075EDF /* HelpMethods.h */,
+				076DE0BD1C77E59800075EDF /* HelpMethods.m */,
+				076DE0BF1C77E5B800075EDF /* Constants.h */,
+				076DE0C31C77EAB500075EDF /* Constants.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076DE0781C77DA7100075EDF /* ViewController.m in Sources */,
+				076DE0B41C77DF6F00075EDF /* AddEditViewController.m in Sources */,
+				076DE0B71C77DF7F00075EDF /* DetailsViewController.m in Sources */,
 				076DE0751C77DA7100075EDF /* AppDelegate.m in Sources */,
+				076DE0C41C77EAB500075EDF /* Constants.m in Sources */,
 				076DE0721C77DA7100075EDF /* main.m in Sources */,
 				076DE07E1C77DA7100075EDF /* Phonebook.xcdatamodeld in Sources */,
+				076DE0BA1C77DFC500075EDF /* PhonebookTableViewController.m in Sources */,
+				076DE0BE1C77E59800075EDF /* HelpMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +439,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -399,6 +482,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -417,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Phonebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.Phonebook;
@@ -428,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Phonebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.Phonebook;

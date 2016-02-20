@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Phonebook
+//
+//  Created by Carlos Martinez on 2/19/16.
+//  Copyright © 2016 Carlos Martinez. All rights reserved.
+//
+//
+// Prefix header for all source files of the project
+//
+
+#ifdef __OBJC__
+
+#import "Constants.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddEditViewController.h
 //  Phonebook
 //
 //  Created by Carlos Martinez on 2/19/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddEditViewController : UIViewController
 
 @end
-
