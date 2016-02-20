@@ -437,9 +437,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -450,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -481,15 +483,17 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +506,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phonebook/PrefixHeader.pch";
 				INFOPLIST_FILE = Phonebook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.Phonebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,7 +520,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phonebook/PrefixHeader.pch";
 				INFOPLIST_FILE = Phonebook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.Phonebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,6 +594,7 @@
 				076DE09F1C77DA7100075EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		076DE0A01C77DA7100075EDF /* Build configuration list for PBXNativeTarget "PhonebookTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +603,7 @@
 				076DE0A21C77DA7100075EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		076DE0A31C77DA7100075EDF /* Build configuration list for PBXNativeTarget "PhonebookUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +612,7 @@
 				076DE0A51C77DA7100075EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

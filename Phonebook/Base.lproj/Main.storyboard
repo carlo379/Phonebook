@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="69e-3Z-Bod">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uj3-8g-Gyg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -14,15 +14,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zcZ-Nn-xIy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="kPhoneBookEntryCell" textLabel="yej-jf-DjM" detailTextLabel="Tz8-2P-LxE" style="IBUITableViewCellStyleValue1" id="zcZ-Nn-xIy">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zcZ-Nn-xIy" id="OkU-On-ps0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yej-jf-DjM">
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tz8-2P-LxE">
+                                            <rect key="frame" x="523.5" y="12" width="41.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="AUs-ui-4cU" kind="showDetail" identifier="kTableViewToDetailsViewSegue" id="79s-3B-Mp9"/>
+                                    <segue destination="AUs-ui-4cU" kind="show" identifier="kTableViewToDetailsViewSegue" action="showDetailViewController:sender:" id="79s-3B-Mp9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -32,8 +48,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Phonebook" id="d6p-oJ-pV1">
-                        <barButtonItem key="leftBarButtonItem" tag="1002" title="Delete" style="plain" id="l0Z-S6-pt3"/>
-                        <barButtonItem key="rightBarButtonItem" tag="1001" style="plain" systemItem="add" id="dmO-7R-Mr7">
+                        <barButtonItem key="leftBarButtonItem" tag="1001" title="Delete" id="l0Z-S6-pt3"/>
+                        <barButtonItem key="rightBarButtonItem" tag="1002" systemItem="add" id="dmO-7R-Mr7">
                             <connections>
                                 <segue destination="KMy-Kl-8TL" kind="presentation" identifier="kTableViewToAddEditViewSegue" id="cPP-Xn-NYc"/>
                             </connections>
@@ -57,24 +73,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Edti View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-Hr-k68">
-                                <rect key="frame" x="247" y="289" width="106" height="21"/>
+                                <rect key="frame" x="247" y="289.5" width="106" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRg-oZ-fff">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="80m-YT-4Tq"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Add Edit" id="80C-Sn-LGx">
+                                        <barButtonItem key="leftBarButtonItem" tag="3001" systemItem="cancel" id="gCA-hO-mi8">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="KMy-Kl-8TL" id="dFi-L4-j34"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" tag="3002" systemItem="done" id="76F-ps-dXM">
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="KMy-Kl-8TL" id="LGk-hL-G9b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XRg-oZ-fff" firstAttribute="leading" secondItem="vLp-Vd-oDc" secondAttribute="leading" id="3l6-cR-WWP"/>
+                            <constraint firstItem="XRg-oZ-fff" firstAttribute="top" secondItem="vLp-Vd-oDc" secondAttribute="top" id="TjS-2N-7P3"/>
+                            <constraint firstAttribute="trailing" secondItem="XRg-oZ-fff" secondAttribute="trailing" id="g0L-S3-7oo"/>
                             <constraint firstItem="H1F-Hr-k68" firstAttribute="centerX" secondItem="vLp-Vd-oDc" secondAttribute="centerX" id="okr-9R-1yk"/>
                             <constraint firstItem="H1F-Hr-k68" firstAttribute="centerY" secondItem="vLp-Vd-oDc" secondAttribute="centerY" id="rma-iG-qwr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="topBarHeightConstraint" destination="80m-YT-4Tq" id="YgC-wT-eNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfN-hh-vCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="1271"/>
+            <point key="canvasLocation" x="1484" y="1272"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Details View-->
         <scene sceneID="Lux-Wp-F1M">
             <objects>
                 <viewController storyboardIdentifier="detailsViewController" id="AUs-ui-4cU" customClass="DetailsViewController" sceneMemberID="viewController">
@@ -86,18 +129,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-bn-5qI">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="ayJ-WZ-g5j">
-                                        <barButtonItem key="rightBarButtonItem" tag="2001" style="plain" systemItem="edit" id="r2d-RQ-F1Y">
-                                            <connections>
-                                                <segue destination="KMy-Kl-8TL" kind="presentation" identifier="kDetailsViewToAddEditViewSegue" id="eKP-Bq-L7L"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMJ-8l-9Ar">
                                 <rect key="frame" x="253" y="289" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -112,6 +143,13 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Details View" id="Sqj-XY-PSB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="8Op-q1-CsE">
+                            <connections>
+                                <segue destination="KMy-Kl-8TL" kind="presentation" identifier="kDetailsViewToAddEditViewSegue" id="wDr-Uh-SvD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vui-OZ-eJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
