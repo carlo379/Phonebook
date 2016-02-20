@@ -25,7 +25,7 @@
                                             <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tz8-2P-LxE">
@@ -63,7 +63,7 @@
         <!--Add Edit View Controller-->
         <scene sceneID="HKC-aD-0Mc">
             <objects>
-                <viewController storyboardIdentifier="addEditViewController" id="KMy-Kl-8TL" customClass="AddEditViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddEditViewController" id="KMy-Kl-8TL" customClass="AddEditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bLO-r8-f0c"/>
                         <viewControllerLayoutGuide type="bottom" id="Bdc-jY-Uks"/>
@@ -176,6 +176,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cPP-Xn-NYc"/>
+        <segue reference="wDr-Uh-SvD"/>
     </inferredMetricsTieBreakers>
 </document>

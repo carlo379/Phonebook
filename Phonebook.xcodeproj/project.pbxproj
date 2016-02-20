@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		076DE0721C77DA7100075EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0711C77DA7100075EDF /* main.m */; };
 		076DE0751C77DA7100075EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0741C77DA7100075EDF /* AppDelegate.m */; };
-		076DE07B1C77DA7100075EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076DE0791C77DA7100075EDF /* Main.storyboard */; };
+		076DE07B1C77DA7100075EDF /* Phonebook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076DE0791C77DA7100075EDF /* Phonebook.storyboard */; };
 		076DE07E1C77DA7100075EDF /* Phonebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 076DE07C1C77DA7100075EDF /* Phonebook.xcdatamodeld */; };
 		076DE0801C77DA7100075EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076DE07F1C77DA7100075EDF /* Assets.xcassets */; };
 		076DE0831C77DA7100075EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */; };
@@ -44,7 +44,7 @@
 		076DE0711C77DA7100075EDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		076DE0731C77DA7100075EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		076DE0741C77DA7100075EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		076DE07A1C77DA7100075EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		076DE07A1C77DA7100075EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Phonebook.storyboard; sourceTree = "<group>"; };
 		076DE07D1C77DA7100075EDF /* Phonebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phonebook.xcdatamodel; sourceTree = "<group>"; };
 		076DE07F1C77DA7100075EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076DE0821C77DA7100075EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */,
-				076DE0791C77DA7100075EDF /* Main.storyboard */,
+				076DE0791C77DA7100075EDF /* Phonebook.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 			files = (
 				076DE0831C77DA7100075EDF /* LaunchScreen.storyboard in Resources */,
 				076DE0801C77DA7100075EDF /* Assets.xcassets in Resources */,
-				076DE07B1C77DA7100075EDF /* Main.storyboard in Resources */,
+				076DE07B1C77DA7100075EDF /* Phonebook.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,12 +394,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		076DE0791C77DA7100075EDF /* Main.storyboard */ = {
+		076DE0791C77DA7100075EDF /* Phonebook.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				076DE07A1C77DA7100075EDF /* Base */,
 			);
-			name = Main.storyboard;
+			name = Phonebook.storyboard;
 			sourceTree = "<group>";
 		};
 		076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */ = {
@@ -533,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phonebook/PrefixHeader.pch";
 				INFOPLIST_FILE = PhonebookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.PhonebookTests;
@@ -545,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Phonebook/PrefixHeader.pch";
 				INFOPLIST_FILE = PhonebookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cm.PhonebookTests;

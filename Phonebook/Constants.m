@@ -29,3 +29,9 @@ NSString *const kPhoneBookEntryCell = @"PhoneBookEntryCell";
 // UI COMPONENT DIMENSIONS
 const int kTopBarPortraitHeight = 64;
 const int kTopBarLandscapeHeight = 44;
+
+// Storyboards
+NSString *const kPhonebookStoryBoard = @"Phonebook";
+
+// Storyboards View Controllers
+NSString *const kAddEditViewController = @"AddEditViewController";

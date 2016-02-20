@@ -30,5 +30,10 @@ extern NSString *const kPhoneBookEntryCell;
 extern const int kTopBarPortraitHeight;
 extern const int kTopBarLandscapeHeight;
 
+// Storyboards
+extern NSString *const kPhonebookStoryBoard;
+
+// Storyboards View Controllers
+extern NSString *const kAddEditViewController;
 
 #endif /* Constants_h */

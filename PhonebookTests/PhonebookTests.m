@@ -7,16 +7,26 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <UIKit/UIKit.h>
 
-@interface PhonebookTests : XCTestCase
+// Test-subject headers.
+#import "AppDelegate.h"
+#import "AddEditViewController.h"
 
+@interface PhonebookTests : XCTestCase {
+    AppDelegate             *app_delegate;
+    //AddEditViewController   *addEditViewController;
+}
 @end
 
 @implementation PhonebookTests
 
+#pragma mark - Test SetUp & TearDown
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    app_delegate            = [[UIApplication sharedApplication] delegate];
+    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:kPhonebookStoryBoard bundle:nil];
+    //addEditViewController   = [storyboard instantiateViewControllerWithIdentifier:kAddEditViewController];
 }
 
 - (void)tearDown {
@@ -24,10 +34,24 @@
     [super tearDown];
 }
 
+#pragma mark - Tests
+
+/* testAppDelegate verifies AppDelegate is instantiated and available.
+ * The test has one part:
+ * 1. Check AppDelegate is not Nil
+ */
+- (void) testAppDelegate {
+    XCTAssertNotNil(app_delegate, @"Cannot find the application delegate");
+}
+
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+
 }
+
+#pragma mark - Performance Tests
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

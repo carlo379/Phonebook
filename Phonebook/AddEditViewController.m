@@ -14,11 +14,11 @@
 // IBOutlet to height layout constraint for Top Bar
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBarHeightConstraint;
 
-
 @end
 
 @implementation AddEditViewController
 
+#pragma mark - View Controller Lifecylce
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -35,7 +35,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark - IBActions
 - (IBAction)cancelButtonPressed:(UIBarButtonItem *)sender {
