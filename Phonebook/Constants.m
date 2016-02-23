@@ -4,27 +4,13 @@
 //
 //  Created by Carlos Martinez on 2/19/16.
 //  Copyright © 2016 Carlos Martinez. All rights reserved.
-//
-//
-//
-//  Tag Usage convention ***********************/
-//  *  PhonebookTableView   = 1xxx  (ex: 1001) *
-//  *  DetailsView          = 2xxx  (ex: 2005) *
-//  *  AddEditView          = 3xxx  (ex: 3053) *
-//  ********************************************/
 
 #import "Constants.h"
 
-
-
-
 // SEGUES
-NSString *const kTableViewToDetailsViewSegue = @"TableViewToDetailsViewSegue";
-NSString *const kTableViewToAddEditViewSegue = @"TableViewToAddEditViewSegue";
-NSString *const kDetailsViewToAddEditViewSegue = @"DetailsViewToAddEditViewSegue";
-
-// CELLS
-NSString *const kPhoneBookEntryCell = @"PhoneBookEntryCell";
+NSString *const kTableViewToDetailsViewSegue = @"tableViewToDetailsViewSegue";
+NSString *const kTableViewToAddEditViewSegue = @"tableViewToAddEditViewSegue";
+NSString *const kDetailsViewToAddEditViewSegue = @"detailsViewToAddEditViewSegue";
 
 // UI COMPONENT DIMENSIONS
 const int kTopBarPortraitHeight = 64;
@@ -34,4 +20,16 @@ const int kTopBarLandscapeHeight = 44;
 NSString *const kPhonebookStoryBoard = @"Phonebook";
 
 // Storyboards View Controllers
-NSString *const kAddEditViewController = @"AddEditViewController";
+NSString *const kAddEditViewController = @"addEditViewController";
+NSString *const kDetailsViewController = @"detailsViewController";
+
+// Entities
+NSString * const kContactEntityName  = @"Contact";
+
+// Entities Attributes
+NSString * const kContactFirstNameAttributeKey = @"firstName";
+NSString * const kContactLastNameAttributeKey  = @"lastName";
+NSString * const kContactPhoneNumberAttributeKey  = @"phoneNumber";
+
+// Cells
+NSString * const kContactCellIdentifier = @"contactCellIdentifier";

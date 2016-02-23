@@ -18,8 +18,13 @@
 		076DE0B41C77DF6F00075EDF /* AddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B31C77DF6F00075EDF /* AddEditViewController.m */; };
 		076DE0B71C77DF7F00075EDF /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B61C77DF7F00075EDF /* DetailsViewController.m */; };
 		076DE0BA1C77DFC500075EDF /* PhonebookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */; };
-		076DE0BE1C77E59800075EDF /* HelpMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0BD1C77E59800075EDF /* HelpMethods.m */; };
 		076DE0C41C77EAB500075EDF /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DE0C31C77EAB500075EDF /* Constants.m */; };
+		07C83EC71C7B6F87003E9997 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83EC61C7B6F87003E9997 /* BaseTableViewController.m */; };
+		07C83ECA1C7B7A8C003E9997 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83EC91C7B7A8C003E9997 /* ResultsTableViewController.m */; };
+		07C83ECC1C7B84D8003E9997 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C83ECB1C7B84D8003E9997 /* TableCell.xib */; };
+		07C83ED21C7BD53C003E9997 /* HelpMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83ED11C7BD53C003E9997 /* HelpMethods.m */; };
+		07CF1A2B1C7A3A3A001AD65F /* Contact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF1A281C7A3A3A001AD65F /* Contact+CoreDataProperties.m */; };
+		07CF1A2C1C7A3A3A001AD65F /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF1A2A1C7A3A3A001AD65F /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +66,20 @@
 		076DE0B61C77DF7F00075EDF /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		076DE0B81C77DFC500075EDF /* PhonebookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhonebookTableViewController.h; sourceTree = "<group>"; };
 		076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhonebookTableViewController.m; sourceTree = "<group>"; };
-		076DE0BC1C77E59800075EDF /* HelpMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMethods.h; sourceTree = "<group>"; };
-		076DE0BD1C77E59800075EDF /* HelpMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMethods.m; sourceTree = "<group>"; };
 		076DE0BF1C77E5B800075EDF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		076DE0C31C77EAB500075EDF /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		076DE0C51C77EE1000075EDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		07C83EC51C7B6F87003E9997 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		07C83EC61C7B6F87003E9997 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		07C83EC81C7B7A8C003E9997 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		07C83EC91C7B7A8C003E9997 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		07C83ECB1C7B84D8003E9997 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		07C83ED01C7BD53C003E9997 /* HelpMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMethods.h; sourceTree = "<group>"; };
+		07C83ED11C7BD53C003E9997 /* HelpMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMethods.m; sourceTree = "<group>"; };
+		07CF1A271C7A3A3A001AD65F /* Contact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+CoreDataProperties.h"; sourceTree = "<group>"; };
+		07CF1A281C7A3A3A001AD65F /* Contact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+CoreDataProperties.m"; sourceTree = "<group>"; };
+		07CF1A291C7A3A3A001AD65F /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		07CF1A2A1C7A3A3A001AD65F /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +130,7 @@
 		076DE06F1C77DA7100075EDF /* Phonebook */ = {
 			isa = PBXGroup;
 			children = (
-				076DE0BB1C77E54E00075EDF /* Helpers */,
+				076DE0BB1C77E54E00075EDF /* Constants */,
 				076DE0A81C77DAA200075EDF /* Controllers */,
 				076DE0A71C77DA9A00075EDF /* Views */,
 				076DE0A61C77DA8B00075EDF /* Models */,
@@ -134,6 +148,8 @@
 				076DE0741C77DA7100075EDF /* AppDelegate.m */,
 				076DE0711C77DA7100075EDF /* main.m */,
 				076DE0C51C77EE1000075EDF /* PrefixHeader.pch */,
+				07C83ED01C7BD53C003E9997 /* HelpMethods.h */,
+				07C83ED11C7BD53C003E9997 /* HelpMethods.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +175,10 @@
 		076DE0A61C77DA8B00075EDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				07CF1A271C7A3A3A001AD65F /* Contact+CoreDataProperties.h */,
+				07CF1A281C7A3A3A001AD65F /* Contact+CoreDataProperties.m */,
+				07CF1A291C7A3A3A001AD65F /* Contact.h */,
+				07CF1A2A1C7A3A3A001AD65F /* Contact.m */,
 				076DE07C1C77DA7100075EDF /* Phonebook.xcdatamodeld */,
 			);
 			name = Models;
@@ -167,6 +187,7 @@
 		076DE0A71C77DA9A00075EDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07C83ECB1C7B84D8003E9997 /* TableCell.xib */,
 				076DE0811C77DA7100075EDF /* LaunchScreen.storyboard */,
 				076DE0791C77DA7100075EDF /* Phonebook.storyboard */,
 			);
@@ -186,6 +207,7 @@
 		076DE0A91C77DAFC00075EDF /* Table View Controller (Main Entry) */ = {
 			isa = PBXGroup;
 			children = (
+				07C83EBE1C7B6D53003E9997 /* Search Controllers */,
 				076DE0B81C77DFC500075EDF /* PhonebookTableViewController.h */,
 				076DE0B91C77DFC500075EDF /* PhonebookTableViewController.m */,
 			);
@@ -210,15 +232,24 @@
 			name = "Edit Add View Controller";
 			sourceTree = "<group>";
 		};
-		076DE0BB1C77E54E00075EDF /* Helpers */ = {
+		076DE0BB1C77E54E00075EDF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				076DE0BC1C77E59800075EDF /* HelpMethods.h */,
-				076DE0BD1C77E59800075EDF /* HelpMethods.m */,
 				076DE0BF1C77E5B800075EDF /* Constants.h */,
 				076DE0C31C77EAB500075EDF /* Constants.m */,
 			);
-			name = Helpers;
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		07C83EBE1C7B6D53003E9997 /* Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07C83EC51C7B6F87003E9997 /* BaseTableViewController.h */,
+				07C83EC61C7B6F87003E9997 /* BaseTableViewController.m */,
+				07C83EC81C7B7A8C003E9997 /* ResultsTableViewController.h */,
+				07C83EC91C7B7A8C003E9997 /* ResultsTableViewController.m */,
+			);
+			name = "Search Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +357,7 @@
 			files = (
 				076DE0831C77DA7100075EDF /* LaunchScreen.storyboard in Resources */,
 				076DE0801C77DA7100075EDF /* Assets.xcassets in Resources */,
+				07C83ECC1C7B84D8003E9997 /* TableCell.xib in Resources */,
 				076DE07B1C77DA7100075EDF /* Phonebook.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,12 +385,16 @@
 			files = (
 				076DE0B41C77DF6F00075EDF /* AddEditViewController.m in Sources */,
 				076DE0B71C77DF7F00075EDF /* DetailsViewController.m in Sources */,
+				07CF1A2C1C7A3A3A001AD65F /* Contact.m in Sources */,
 				076DE0751C77DA7100075EDF /* AppDelegate.m in Sources */,
 				076DE0C41C77EAB500075EDF /* Constants.m in Sources */,
 				076DE0721C77DA7100075EDF /* main.m in Sources */,
+				07C83EC71C7B6F87003E9997 /* BaseTableViewController.m in Sources */,
 				076DE07E1C77DA7100075EDF /* Phonebook.xcdatamodeld in Sources */,
+				07C83ECA1C7B7A8C003E9997 /* ResultsTableViewController.m in Sources */,
+				07C83ED21C7BD53C003E9997 /* HelpMethods.m in Sources */,
 				076DE0BA1C77DFC500075EDF /* PhonebookTableViewController.m in Sources */,
-				076DE0BE1C77E59800075EDF /* HelpMethods.m in Sources */,
+				07CF1A2B1C7A3A3A001AD65F /* Contact+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

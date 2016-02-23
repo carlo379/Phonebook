@@ -23,9 +23,6 @@ extern NSString *const kTableViewToDetailsViewSegue;
 extern NSString *const kTableViewToAddEditViewSegue;
 extern NSString *const kDetailsViewToAddEditViewSegue;
 
-// CELLS
-extern NSString *const kPhoneBookEntryCell;
-
 // UI COMPONENT DIMENSIONS
 extern const int kTopBarPortraitHeight;
 extern const int kTopBarLandscapeHeight;
@@ -35,5 +32,17 @@ extern NSString *const kPhonebookStoryBoard;
 
 // Storyboards View Controllers
 extern NSString *const kAddEditViewController;
+extern NSString *const kDetailsViewController;
+
+// Entities
+extern NSString *const kContactEntityName;
+
+// Entities Attributes
+extern NSString *const kContactFirstNameAttributeKey;
+extern NSString *const kContactLastNameAttributeKey;
+extern NSString *const kContactPhoneNumberAttributeKey;
+
+// Cells
+extern NSString *const kContactCellIdentifier;
 
 #endif /* Constants_h */

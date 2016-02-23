@@ -5,9 +5,10 @@
 //  Created by Carlos Martinez on 2/19/16.
 //  Copyright © 2016 Carlos Martinez. All rights reserved.
 //
+#import "BaseTableViewController.h"
 
-#import <UIKit/UIKit.h>
+@interface PhonebookTableViewController : BaseTableViewController
 
-@interface PhonebookTableViewController : UITableViewController
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 @end
