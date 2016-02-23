@@ -23,6 +23,8 @@
 		07C83ECA1C7B7A8C003E9997 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83EC91C7B7A8C003E9997 /* ResultsTableViewController.m */; };
 		07C83ECC1C7B84D8003E9997 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C83ECB1C7B84D8003E9997 /* TableCell.xib */; };
 		07C83ED21C7BD53C003E9997 /* HelpMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83ED11C7BD53C003E9997 /* HelpMethods.m */; };
+		07C83ED41C7C4BE6003E9997 /* ContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83ED31C7C4BE6003E9997 /* ContactTests.m */; };
+		07C83ED61C7C6F33003E9997 /* TableViewCellConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C83ED51C7C6F33003E9997 /* TableViewCellConfigurationTests.m */; };
 		07CF1A2B1C7A3A3A001AD65F /* Contact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF1A281C7A3A3A001AD65F /* Contact+CoreDataProperties.m */; };
 		07CF1A2C1C7A3A3A001AD65F /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF1A2A1C7A3A3A001AD65F /* Contact.m */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		07C83ECB1C7B84D8003E9997 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		07C83ED01C7BD53C003E9997 /* HelpMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMethods.h; sourceTree = "<group>"; };
 		07C83ED11C7BD53C003E9997 /* HelpMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMethods.m; sourceTree = "<group>"; };
+		07C83ED31C7C4BE6003E9997 /* ContactTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTests.m; sourceTree = "<group>"; };
+		07C83ED51C7C6F33003E9997 /* TableViewCellConfigurationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellConfigurationTests.m; sourceTree = "<group>"; };
 		07CF1A271C7A3A3A001AD65F /* Contact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+CoreDataProperties.h"; sourceTree = "<group>"; };
 		07CF1A281C7A3A3A001AD65F /* Contact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+CoreDataProperties.m"; sourceTree = "<group>"; };
 		07CF1A291C7A3A3A001AD65F /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 		076DE08C1C77DA7100075EDF /* PhonebookTests */ = {
 			isa = PBXGroup;
 			children = (
+				07C83ED51C7C6F33003E9997 /* TableViewCellConfigurationTests.m */,
+				07C83ED31C7C4BE6003E9997 /* ContactTests.m */,
 				076DE08D1C77DA7100075EDF /* PhonebookTests.m */,
 				076DE08F1C77DA7100075EDF /* Info.plist */,
 			);
@@ -402,6 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C83ED61C7C6F33003E9997 /* TableViewCellConfigurationTests.m in Sources */,
+				07C83ED41C7C4BE6003E9997 /* ContactTests.m in Sources */,
 				076DE08E1C77DA7100075EDF /* PhonebookTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

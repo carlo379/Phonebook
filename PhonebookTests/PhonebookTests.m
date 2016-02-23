@@ -7,15 +7,14 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 
 // Test-subject headers.
 #import "AppDelegate.h"
 #import "AddEditViewController.h"
 
 @interface PhonebookTests : XCTestCase {
-    AppDelegate             *app_delegate;
-    //AddEditViewController   *addEditViewController;
+    AppDelegate *app_delegate;
 }
 @end
 
@@ -42,13 +41,6 @@
  */
 - (void) testAppDelegate {
     XCTAssertNotNil(app_delegate, @"Cannot find the application delegate");
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
-
 }
 
 #pragma mark - Performance Tests
