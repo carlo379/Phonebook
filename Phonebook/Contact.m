@@ -11,8 +11,6 @@
 @implementation Contact
 
 +(BOOL)addContactWithRecordDictionary:(NSDictionary *)recordDictionary inManagedObjectContext:(NSManagedObjectContext *)context error:(NSError **)errorPtr {
-    // Flags
-    NSError *saveError;
     
     //Change to 'Record'
     Contact *contact = nil;
@@ -22,37 +20,51 @@
     contact.lastName = [recordDictionary valueForKeyPath:kContactLastNameAttributeKey];
     contact.phoneNumber = [recordDictionary valueForKeyPath:kContactPhoneNumberAttributeKey];
 
+    NSError *saveError;
     // save context after adding record and return result
-    return [self saveContext:context error:&saveError];
-}
-
-+(BOOL)saveContext:(NSManagedObjectContext *)context error:(NSError **)errorPtr {
+    BOOL success = [self saveContext:context error:&saveError];
     
-    // Flags
-    BOOL success = YES;         // Return variable
-    NSError *saveError = nil;   // Save Changes to Managed Object Context
-    
-    if([context hasChanges]){
-        success = [context save:&saveError];
-        if(!success) {
-            // Generate Assertion if fails
-            NSAssert(NO, @"Error saving context: %@\n%@", [saveError localizedDescription], [saveError userInfo]);
+    // Verify if error
+    if (!success) {
+        
+        // Check that pointer was passed
+        if (errorPtr) {
+            
+            // Pass error to pointer of NSError
+            *errorPtr = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileWriteUnknownError userInfo:@{NSUnderlyingErrorKey: saveError}];
         }
     }
     
     return success;
 }
 
-- (BOOL)deleteContactInManagedObjectContext:(NSManagedObjectContext *)context error:(NSError **)errorPtr {
++(BOOL)saveContext:(NSManagedObjectContext *)context error:(NSError **)errorPtr {
     
     // Flags
-    NSError *saveError = nil;   // Save Changes to Managed Object Context
+    BOOL success = YES;         // Return variable
     
-    // Delete Contact
-    [context deleteObject:self];
+    if([context hasChanges]){
+        
+        // Save Changes to Managed Object Context
+        NSError *saveError = nil;
+        success = [context save:&saveError];
+        
+        // Verify if error
+        if(!success) {
+            
+            // Generate Assertion for error
+            NSAssert(NO, @"Error saving context: %@\n%@", [saveError localizedDescription], [saveError userInfo]);
+            
+            // Check that pointer was passed
+            if (errorPtr) {
+                
+                // Pass error to pointer of NSError
+                *errorPtr = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFileWriteUnknownError userInfo:@{NSUnderlyingErrorKey: saveError}];
+            }
+        }
+    }
     
-    // Return 'save' operation results
-    return [Contact saveContext:self.managedObjectContext error:&saveError];
+    return success;
 }
 
 - (BOOL)deleteContact {

@@ -13,7 +13,7 @@
 //  *  AddEditView          = 3xxx  (ex: 3053) *
 //  ********************************************/
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 #ifndef Constants_h
 #define Constants_h
