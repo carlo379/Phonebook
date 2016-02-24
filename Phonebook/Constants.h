@@ -15,9 +15,6 @@
 
 @import UIKit;
 
-#ifndef Constants_h
-#define Constants_h
-
 // SEGUES
 extern NSString *const kTableViewToDetailsViewSegue;
 extern NSString *const kTableViewToAddEditViewSegue;
@@ -33,6 +30,7 @@ extern NSString *const kPhonebookStoryBoard;
 // Storyboards View Controllers
 extern NSString *const kAddEditViewController;
 extern NSString *const kDetailsViewController;
+extern NSString *const kPhonebookTableViewController;
 
 // Entities
 extern NSString *const kContactEntityName;
@@ -44,5 +42,3 @@ extern NSString *const kContactPhoneNumberAttributeKey;
 
 // Cells
 extern NSString *const kContactCellIdentifier;
-
-#endif /* Constants_h */

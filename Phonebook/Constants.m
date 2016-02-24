@@ -22,6 +22,7 @@ NSString *const kPhonebookStoryBoard = @"Phonebook";
 // Storyboards View Controllers
 NSString *const kAddEditViewController = @"addEditViewController";
 NSString *const kDetailsViewController = @"detailsViewController";
+NSString *const kPhonebookTableViewController = @"phonebookTableViewController";
 
 // Entities
 NSString * const kContactEntityName  = @"Contact";
