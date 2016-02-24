@@ -34,13 +34,6 @@
 			remoteGlobalIDString = 076DE06C1C77DA7100075EDF;
 			remoteInfo = Phonebook;
 		};
-		076DE0951C77DA7100075EDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 076DE0651C77DA7100075EDF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 076DE06C1C77DA7100075EDF;
-			remoteInfo = Phonebook;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +48,6 @@
 		076DE0841C77DA7100075EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076DE0891C77DA7100075EDF /* PhonebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076DE08F1C77DA7100075EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		076DE0941C77DA7100075EDF /* PhonebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076DE0B21C77DF6F00075EDF /* AddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditViewController.h; sourceTree = "<group>"; };
 		076DE0B31C77DF6F00075EDF /* AddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditViewController.m; sourceTree = "<group>"; };
 		076DE0B51C77DF7F00075EDF /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
@@ -94,13 +86,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		076DE0911C77DA7100075EDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,7 +103,6 @@
 			children = (
 				076DE06D1C77DA7100075EDF /* Phonebook.app */,
 				076DE0891C77DA7100075EDF /* PhonebookTests.xctest */,
-				076DE0941C77DA7100075EDF /* PhonebookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,24 +261,6 @@
 			productReference = 076DE0891C77DA7100075EDF /* PhonebookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		076DE0931C77DA7100075EDF /* PhonebookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 076DE0A31C77DA7100075EDF /* Build configuration list for PBXNativeTarget "PhonebookUITests" */;
-			buildPhases = (
-				076DE0901C77DA7100075EDF /* Sources */,
-				076DE0911C77DA7100075EDF /* Frameworks */,
-				076DE0921C77DA7100075EDF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				076DE0961C77DA7100075EDF /* PBXTargetDependency */,
-			);
-			name = PhonebookUITests;
-			productName = PhonebookUITests;
-			productReference = 076DE0941C77DA7100075EDF /* PhonebookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -308,10 +274,6 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					076DE0881C77DA7100075EDF = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 076DE06C1C77DA7100075EDF;
-					};
-					076DE0931C77DA7100075EDF = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 076DE06C1C77DA7100075EDF;
 					};
@@ -332,7 +294,6 @@
 			targets = (
 				076DE06C1C77DA7100075EDF /* Phonebook */,
 				076DE0881C77DA7100075EDF /* PhonebookTests */,
-				076DE0931C77DA7100075EDF /* PhonebookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,13 +311,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		076DE0871C77DA7100075EDF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		076DE0921C77DA7100075EDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,13 +347,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		076DE0901C77DA7100075EDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -407,11 +354,6 @@
 			isa = PBXTargetDependency;
 			target = 076DE06C1C77DA7100075EDF /* Phonebook */;
 			targetProxy = 076DE08A1C77DA7100075EDF /* PBXContainerItemProxy */;
-		};
-		076DE0961C77DA7100075EDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 076DE06C1C77DA7100075EDF /* Phonebook */;
-			targetProxy = 076DE0951C77DA7100075EDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -577,28 +519,6 @@
 			};
 			name = Release;
 		};
-		076DE0A41C77DA7100075EDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PhonebookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cm.PhonebookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Phonebook;
-			};
-			name = Debug;
-		};
-		076DE0A51C77DA7100075EDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PhonebookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cm.PhonebookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Phonebook;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -625,15 +545,6 @@
 			buildConfigurations = (
 				076DE0A11C77DA7100075EDF /* Debug */,
 				076DE0A21C77DA7100075EDF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		076DE0A31C77DA7100075EDF /* Build configuration list for PBXNativeTarget "PhonebookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				076DE0A41C77DA7100075EDF /* Debug */,
-				076DE0A51C77DA7100075EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
